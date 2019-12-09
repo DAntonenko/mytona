@@ -34,8 +34,11 @@ class Carousel extends React.Component {
  
   state = {
     galleryItems: this.items.map((item, itemIndex) =>
-      <a href={`game/${itemIndex}`}>
-        <picture>
+      <a
+        className='carousel__slide-container'
+        href={`game/${itemIndex}`}
+      >
+        <picture className='carousel__slide-picture'>
           <source
             srcset={item.srcset}
             media='(max-width: 875px)'
