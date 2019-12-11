@@ -8,13 +8,15 @@ import './scss/App.scss';
 // import { Carousel } from 'react-responsive-carousel';
 // import AliceCarousel from 'react-alice-carousel';
 // import "react-alice-carousel/lib/alice-carousel.css";
-import Carousel from'./components/carousel/carousel.js'
+import Header from './components/header/header.js'
+import Carousel from './components/carousel/carousel.js'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
 function App() {
   return (
     <body className="main-page">
-      <header className='main-page__header'></header>
+      <a name='top-screen' href='/'>top-screen</a>
+      <Header />
       <main className='main-page__content'>
         <Carousel className='main-page__carousel' />
         <section className='main-page__news'>I'am still here</section>

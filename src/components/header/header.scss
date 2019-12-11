@@ -1,0 +1,30 @@
+.header {
+  position: sticky;
+  top: 0;
+  height: 47px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 3px 10px 0;
+  }
+
+  &__logo-leaf {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+
+  &__logo-name {
+    color: rgb(64, 64, 64);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  &__burger {
+    margin-left: auto;
+    border: none;
+    outline: none;
+  }
+}

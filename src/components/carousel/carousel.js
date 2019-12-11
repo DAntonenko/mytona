@@ -70,6 +70,9 @@ class Carousel extends React.Component {
       <div className='carousel'>
         <div className='carousel__wrapper'>
           <AliceCarousel
+            duration={500}
+            autoPlay={true}
+            autoPlayInterval={5000}
             dotsDisabled={true}
             buttonsDisabled={true}
             items={this.state.galleryItems}

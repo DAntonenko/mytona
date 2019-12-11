@@ -1,12 +1,31 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
+@font-face {
+  font-family: 'piratica';
+  src: url('../fonts/piratica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'piratica';
+  src: url('../fonts/piratica-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .main-page {
-  font-family: pragmatica, "Open Sans", "EB Garamond", sans-serif;
-  text-align: center;
+  position: relative;
+  font-family: 'piratica', 'Open Sans', 'EB Garamond', sans-serif;
+  text-size-adjust: 100%;
 
   &__news {
     background-color: maroon;
   }
+}
+
+a[name='top-screen'] {
+  display: none;
 }
 
 .carousel {
