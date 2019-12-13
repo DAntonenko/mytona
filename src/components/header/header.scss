@@ -1,7 +1,8 @@
 .header {
   position: sticky;
   top: 0;
-  height: 47px;
+  background-color: #FBFBFB;
+  z-index: 10;
 
   &__wrapper {
     display: flex;
@@ -26,5 +27,21 @@
     margin-left: auto;
     border: none;
     outline: none;
+  }
+
+  &__dropdown {
+    display: none;
+
+    &--visible {
+      display: flex;
+      flex-direction: column;
+      background-color: #FBFBFB;
+      background-image: url('https://mytona.com/static/images/framegray.png');
+      box-shadow: inset 2rem -10rem 3rem #FBFBFB;
+    }
+  }
+
+  &__navigation-options-list {
+    list-style: none;
   }
 }

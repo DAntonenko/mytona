@@ -10,7 +10,7 @@ class Header extends React.Component {
   toggleButton = () => {
     this.setState({
       isActive: !this.state.isActive
-    })
+    });
   }
 
   render() {
@@ -33,16 +33,16 @@ class Header extends React.Component {
             toggleButton={this.toggleButton}
           />
         </div>
-        <div className='header__dropdown'>
+        <div className={!this.state.isActive ? 'header__dropdown' : 'header__dropdown header__dropdown--visible'}>
           <nav className='header__navigation'>
             <ul className='header__navigation-options-list'>
-              <li className='header__navigation-option'></li>
-              <li className='header__navigation-option'></li>
-              <li className='header__navigation-option'></li>
-              <li className='header__navigation-option'></li>
-              <li className='header__navigation-option'></li>
-              <li className='header__navigation-option'></li>
-              <li className='header__navigation-option'></li>
+              <li className='header__navigation-option'>MAIN</li>
+              <li className='header__navigation-option'>COMPANY</li>
+              <li className='header__navigation-option'>CAREER</li>
+              <li className='header__navigation-option'>GAMES</li>
+              <li className='header__navigation-option'>NEWS</li>
+              <li className='header__navigation-option'>SUPPORT</li>
+              <li className='header__navigation-option'>РУС</li>
             </ul>
           </nav>
           <section className='header__social-buttons'>
