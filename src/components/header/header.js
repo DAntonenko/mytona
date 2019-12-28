@@ -36,19 +36,34 @@ class Header extends React.Component {
         <div className={!this.state.isActive ? 'header__dropdown' : 'header__dropdown header__dropdown--visible'}>
           <nav className='header__navigation'>
             <ul className='header__navigation-options-list'>
-              <li className='header__navigation-option'>MAIN</li>
-              <li className='header__navigation-option'>COMPANY</li>
-              <li className='header__navigation-option'>CAREER</li>
-              <li className='header__navigation-option'>GAMES</li>
-              <li className='header__navigation-option'>NEWS</li>
-              <li className='header__navigation-option'>SUPPORT</li>
-              <li className='header__navigation-option'>РУС</li>
+              
+              <li className='header__navigation-option header__navigation-option--active'>
+                <a href='/'>MAIN</a>
+              </li>
+              <li className='header__navigation-option'>
+                <a href='/'>COMPANY</a>
+              </li>
+              <li className='header__navigation-option'>
+                <a href='/'>CAREER</a>
+              </li>
+              <li className='header__navigation-option'>
+                <a href='/'>GAMES</a>
+              </li>
+              <li className='header__navigation-option'>
+                <a href='/'>NEWS</a>
+              </li>
+              <li className='header__navigation-option'>
+                <a href='/'>SUPPORT</a>
+              </li>
+              <li className='header__navigation-option'>
+                <a href='/'>РУС</a>
+              </li>
             </ul>
           </nav>
           <section className='header__social-buttons'>
 
           </section>
-          <img className='header__dropdown-logo' />
+          <div className='header__dropdown-logo' />
         </div>
       </header>
     );

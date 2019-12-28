@@ -42,6 +42,38 @@
   }
 
   &__navigation-options-list {
+    padding: 0;
     list-style: none;
+  }
+
+  &__navigation-option {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: #404040;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 5px 0;
+    margin-left: 60px;
+    transition: color 0.5s;
+    cursor: pointer;
+
+    &:hover,
+    &--active {
+      color: #037EBC;
+    }
+
+    & a {
+      color: inherit;
+      line-height: 40px;
+      text-decoration: none;
+    }
+
+    &__dropdown-logo {
+      width: 100px;
+      height: 30px;
+      background-color: lightcoral;
+      background-image: url('https://mytona.com/static/images/logo.svg');
+    }
   }
 }
