@@ -9,7 +9,7 @@
     "apollo-boost": "^0.4.7",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.10.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "pure-react-carousel": "^1.24.1",
     "react": "^16.12.0",
